@@ -1,5 +1,14 @@
+:root {
+    --red: #ff0000;
+    --navy: #1c1c55;
+    --gold: #efb814;
+    --white: #f2f2f2;
+    --black: #2f2f2f;
+  }
+
 html, body {
-    background-color: #f2f2f2;
+    background-color: var(--navy);
+    color: var(--white);
     height:100%;
     width:100%;
     margin:0;
@@ -8,9 +17,12 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+a, img {
+    color: var(--white);
+}
+
 .header {
     color: #2f2f2f;
-    background-color: #dfdddd;
     position: static;
     display: flex;
     flex-wrap: nowrap;
@@ -60,4 +72,33 @@ main {
     padding: 20px;
 }
 
+.what-we-offer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
 
+.what-we-offer h1 {
+    min-width: 100%;
+    text-align: center;
+}
+
+.offers{ 
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 15px;
+}
+
+.offers h2 {
+    text-align: center;
+}
+
+.offers ul {
+    width: 20%;
+    padding: 20px;
+}
